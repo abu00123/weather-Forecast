@@ -1,0 +1,155 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6e3; /* Light cream background */
+    color: #3e4a61; /* Muted dark blue-gray for text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff; /* White for clean contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6f61; /* Coral for a vibrant heading */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d3dce3; /* Soft blue-gray border */
+    border-radius: 4px;
+    background-color: #f8fafb; /* Very light blue-gray background */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ff6f61; /* Coral button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e35b51; /* Slightly darker coral for hover */
+}
+
+.weather {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f4f8; /* Soft blue-green background */
+    border-radius: 6px;
+    text-align: left;
+}
+
+.error {
+    color: #d9534f; /* Red for error messages */
+    margin-top: 10px;
+}
+
+.weather-emoji {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+/* Media Queries */
+
+/* For larger screens (769px and above) */
+@media (min-width: 769px) {
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    input {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .weather {
+        font-size: 16px;
+    }
+
+    .weather-emoji {
+        font-size: 24px;
+    }
+}
+
+/* For tablets (width up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* For smartphones (width up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .weather {
+        font-size: 14px;
+    }
+
+    .weather-emoji {
+        font-size: 20px;
+    }
+}
+
